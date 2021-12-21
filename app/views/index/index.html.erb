@@ -1,0 +1,14 @@
+<%= form_with  url: view_path, method: :get do |form| %>
+  <div>
+    <%= form.label :username,value: "Input quantity", style: "display: block" %>
+    <%= form.text_field :username %>
+  </div>
+  
+  <div>
+    <%= form.submit %>
+  </div>
+
+<% end %>
+
+<%= link_to "S", "view" %>
+<%= link_to "xml", "all" %>

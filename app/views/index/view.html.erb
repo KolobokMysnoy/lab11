@@ -1,0 +1,23 @@
+<h1>Answer</h1>
+<table>
+        <tr>
+                <td> iteration </td>
+                <td> factorial </td>
+                <td> number1 </td>
+                <td> number2 </td>
+                <td> number3 </td>
+
+        </tr>
+        <%x=Answer.all%>
+        <%Answer.all.each do |y|%>
+                <tr>
+                        <%if y.iteration.present? then%>
+                                <td><%=y.iteration%></td>
+                                <td><%=y.factorial%></td>
+                                <td><%=(y.number)-1 %></td>
+                                <td><%=(y.number) %> </td>
+                                <td><%=(y.number)+1 %> </td>
+                        <% end %>
+                </tr>
+        <%end%>
+</table>
